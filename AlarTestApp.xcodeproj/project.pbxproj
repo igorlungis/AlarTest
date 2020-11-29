@@ -3,15 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		49655910F395936E35848330 /* Pods_AlarTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FD27573EC9E42CA8F3DC5D /* Pods_AlarTestApp.framework */; };
+		D93ECBAC2573A56C00797D41 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93ECBAB2573A56C00797D41 /* UIView.swift */; };
 		D944BA2D25737B20005335BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944BA2C25737B20005335BD /* AppDelegate.swift */; };
 		D944BA2F25737B20005335BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944BA2E25737B20005335BD /* SceneDelegate.swift */; };
 		D944BA3625737B22005335BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D944BA3525737B22005335BD /* Assets.xcassets */; };
 		D944BA3925737B22005335BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D944BA3725737B22005335BD /* LaunchScreen.storyboard */; };
+		D984D4CD2573B5A600B6FD80 /* LogIn+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4CC2573B5A600B6FD80 /* LogIn+Types.swift */; };
+		D984D4D02573B5B600B6FD80 /* LogIn+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4CF2573B5B600B6FD80 /* LogIn+Presenter.swift */; };
+		D984D4D32573BF9800B6FD80 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4D22573BF9800B6FD80 /* UIButton.swift */; };
 		D9F7A55F2573846500D42D80 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F7A55E2573846500D42D80 /* LogInViewController.swift */; };
 		D9F7A5632573849600D42D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F7A5622573849600D42D80 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,12 +24,16 @@
 		1F8E4CC57111D30F3DF38CD5 /* Pods-AlarTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarTestApp.debug.xcconfig"; path = "Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		26301D082DDD2DF5DA95D895 /* Pods-AlarTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarTestApp.release.xcconfig"; path = "Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		58FD27573EC9E42CA8F3DC5D /* Pods_AlarTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlarTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93ECBAB2573A56C00797D41 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D944BA2925737B20005335BD /* AlarTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D944BA2C25737B20005335BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D944BA2E25737B20005335BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D944BA3525737B22005335BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D944BA3825737B22005335BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D944BA3A25737B22005335BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D984D4CC2573B5A600B6FD80 /* LogIn+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogIn+Types.swift"; sourceTree = "<group>"; };
+		D984D4CF2573B5B600B6FD80 /* LogIn+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogIn+Presenter.swift"; sourceTree = "<group>"; };
+		D984D4D22573BF9800B6FD80 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		D9F7A55E2573846500D42D80 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		D9F7A5622573849600D42D80 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D93ECBA92573A52B00797D41 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D93ECBAB2573A56C00797D41 /* UIView.swift */,
+				D984D4D22573BF9800B6FD80 /* UIButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D944BA2025737B20005335BD = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +83,7 @@
 				D9F7A5012573826B00D42D80 /* AppDelegate */,
 				D9F7A5032573829000D42D80 /* Screens */,
 				D9F7A552257382CD00D42D80 /* Resources */,
+				D93ECBA92573A52B00797D41 /* Extensions */,
 			);
 			path = AlarTestApp;
 			sourceTree = "<group>";
@@ -130,6 +148,8 @@
 		D9F7A558257383F400D42D80 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				D984D4CC2573B5A600B6FD80 /* LogIn+Types.swift */,
+				D984D4CF2573B5B600B6FD80 /* LogIn+Presenter.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -198,6 +218,7 @@
 				D944BA2525737B20005335BD /* Sources */,
 				D944BA2625737B20005335BD /* Frameworks */,
 				D944BA2725737B20005335BD /* Resources */,
+				803F36142792E813D10836E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +297,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		803F36142792E813D10836E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -283,9 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93ECBAC2573A56C00797D41 /* UIView.swift in Sources */,
 				D944BA2D25737B20005335BD /* AppDelegate.swift in Sources */,
 				D944BA2F25737B20005335BD /* SceneDelegate.swift in Sources */,
+				D984D4CD2573B5A600B6FD80 /* LogIn+Types.swift in Sources */,
 				D9F7A55F2573846500D42D80 /* LogInViewController.swift in Sources */,
+				D984D4D02573B5B600B6FD80 /* LogIn+Presenter.swift in Sources */,
+				D984D4D32573BF9800B6FD80 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

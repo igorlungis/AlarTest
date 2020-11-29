@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-zW-uvE">
-                                <rect key="frame" x="0.0" y="44" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwE-Vg-Lfn" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -34,7 +34,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUO-Z4-fa8">
                                                         <rect key="frame" x="0.0" y="0.0" width="71" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qWY-zI-TNY" userLabel="Login field">
@@ -45,12 +45,12 @@
                                                         </constraints>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osz-CH-XiP">
                                                         <rect key="frame" x="0.0" y="93" width="62.5" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SV3-yt-Ws9" userLabel="Password field">
@@ -103,7 +103,7 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aN-OJ-43F" userLabel="Footer view">
-                                <rect key="frame" x="0.0" y="760" width="414" height="102"/>
+                                <rect key="frame" x="0.0" y="780" width="414" height="82"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HY6-Wy-vox">
                                         <rect key="frame" x="28" y="12" width="358" height="50"/>
@@ -131,7 +131,7 @@
                                     <constraint firstItem="HY6-Wy-vox" firstAttribute="leading" secondItem="6aN-OJ-43F" secondAttribute="leading" constant="28" id="5ve-le-3LN"/>
                                     <constraint firstItem="HY6-Wy-vox" firstAttribute="top" secondItem="6aN-OJ-43F" secondAttribute="top" constant="12" id="g49-s2-DY3"/>
                                     <constraint firstAttribute="trailing" secondItem="HY6-Wy-vox" secondAttribute="trailing" constant="28" id="wlx-rn-g1l"/>
-                                    <constraint firstAttribute="bottom" secondItem="HY6-Wy-vox" secondAttribute="bottom" constant="40" id="woy-Tu-7Dl"/>
+                                    <constraint firstAttribute="bottom" secondItem="HY6-Wy-vox" secondAttribute="bottom" constant="20" id="woy-Tu-7Dl"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -152,6 +152,7 @@
                     <connections>
                         <outlet property="nameTF" destination="qWY-zI-TNY" id="upr-b4-NNf"/>
                         <outlet property="nextButton" destination="HY6-Wy-vox" id="Lde-jd-COr"/>
+                        <outlet property="nextButtonBottomSpace" destination="woy-Tu-7Dl" id="AT2-N6-wRI"/>
                         <outlet property="passwordTF" destination="SV3-yt-Ws9" id="bHv-Ko-DMD"/>
                         <outlet property="scrollView" destination="Rnp-zW-uvE" id="lah-5i-pts"/>
                     </connections>

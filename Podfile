@@ -7,4 +7,7 @@ target 'AlarTestApp' do
 
   # Pods for AlarTestApp
 
+pod 'Alamofire'
+pod 'SwiftyJSON'
+
 end
