@@ -10,7 +10,7 @@ import Foundation
 enum LogInScreen {}
 
 protocol LogInView: AnyObject {
-    func render()
+  func showErrorAlert(error: String)
 }
 
 protocol LogInPresenter: AnyObject {
@@ -25,5 +25,5 @@ extension LogInScreen {
 }
 
 protocol LogInRouter: AnyObject {
-  func goToPagesScreen()
+  func goToPagesScreen(code: String)
 }

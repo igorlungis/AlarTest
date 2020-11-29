@@ -49,18 +49,18 @@ class LogInViewController: UIViewController {
 
 //MARK: - LogInView protocol
 extension LogInViewController: LogInView {
-  func render() {
-    print(#function)
+  func showErrorAlert(error: String) {
+    showAlert(message: error)
   }
   
 }
 
 //MARK: - LogInRouter protocol
 extension LogInViewController: LogInRouter {
-  func goToPagesScreen() {
+  
+  func goToPagesScreen(code: String) {
     print(#function)
   }
-  
   
 }
 

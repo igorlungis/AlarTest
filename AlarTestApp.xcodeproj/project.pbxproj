@@ -16,6 +16,7 @@
 		D984D4CD2573B5A600B6FD80 /* LogIn+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4CC2573B5A600B6FD80 /* LogIn+Types.swift */; };
 		D984D4D02573B5B600B6FD80 /* LogIn+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4CF2573B5B600B6FD80 /* LogIn+Presenter.swift */; };
 		D984D4D32573BF9800B6FD80 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4D22573BF9800B6FD80 /* UIButton.swift */; };
+		D984D4E02573E3A600B6FD80 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4DF2573E3A600B6FD80 /* GradientView.swift */; };
 		D9F7A55F2573846500D42D80 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F7A55E2573846500D42D80 /* LogInViewController.swift */; };
 		D9F7A5632573849600D42D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F7A5622573849600D42D80 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		D984D4CC2573B5A600B6FD80 /* LogIn+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogIn+Types.swift"; sourceTree = "<group>"; };
 		D984D4CF2573B5B600B6FD80 /* LogIn+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogIn+Presenter.swift"; sourceTree = "<group>"; };
 		D984D4D22573BF9800B6FD80 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		D984D4DF2573E3A600B6FD80 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D9F7A55E2573846500D42D80 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		D9F7A5622573849600D42D80 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +86,17 @@
 				D9F7A5032573829000D42D80 /* Screens */,
 				D9F7A552257382CD00D42D80 /* Resources */,
 				D93ECBA92573A52B00797D41 /* Extensions */,
+				D984D4DE2573E37500B6FD80 /* Custom Views */,
 			);
 			path = AlarTestApp;
+			sourceTree = "<group>";
+		};
+		D984D4DE2573E37500B6FD80 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				D984D4DF2573E3A600B6FD80 /* GradientView.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		D9F7A5012573826B00D42D80 /* AppDelegate */ = {
@@ -327,6 +338,7 @@
 				D984D4CD2573B5A600B6FD80 /* LogIn+Types.swift in Sources */,
 				D9F7A55F2573846500D42D80 /* LogInViewController.swift in Sources */,
 				D984D4D02573B5B600B6FD80 /* LogIn+Presenter.swift in Sources */,
+				D984D4E02573E3A600B6FD80 /* GradientView.swift in Sources */,
 				D984D4D32573BF9800B6FD80 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
