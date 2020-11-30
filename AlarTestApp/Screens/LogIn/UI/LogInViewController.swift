@@ -31,6 +31,7 @@ class LogInViewController: UIViewController {
     presenter = LogInScreen.Presenter(view: self, router: self)
     NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    navigationController?.setNavigationBarHidden(true, animated: false)
   }
   
   @IBAction func nextDidTap(_ sender: Any) {
@@ -60,6 +61,10 @@ extension LogInViewController: LogInRouter {
   
   func goToPagesScreen(code: String) {
     print(#function)
+    let vc = storyboard?.instantiateViewController(identifier: "pages") as? PagesViewController
+    vc?.code = code
+    navigationController?.pushViewController(vc!, animated: true)
+    
   }
   
 }

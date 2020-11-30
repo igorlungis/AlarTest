@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BXp-Bq-Dtt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PaS-Kv-RuL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-zW-uvE">
-                                <rect key="frame" x="0.0" y="44" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="692"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwE-Vg-Lfn" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -149,6 +149,7 @@
                             <constraint firstItem="Dyl-bo-HeH" firstAttribute="trailing" secondItem="Rnp-zW-uvE" secondAttribute="trailing" id="yFZ-Yi-ALa"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="g8c-UV-fae"/>
                     <connections>
                         <outlet property="nameTF" destination="qWY-zI-TNY" id="upr-b4-NNf"/>
                         <outlet property="nextButton" destination="HY6-Wy-vox" id="Lde-jd-COr"/>
@@ -159,12 +160,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otb-RO-YI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367" y="-237"/>
+            <point key="canvasLocation" x="542.02898550724638" y="-237.05357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Pages View Controller-->
         <scene sceneID="d7T-lE-Clc">
             <objects>
-                <viewController id="vEx-j6-Qwb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pages" id="vEx-j6-Qwb" customClass="PagesViewController" customModule="AlarTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="neU-w0-TMc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +174,7 @@
                                 <rect key="frame" x="0.0" y="153" width="414" height="709"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="254" id="0FA-YL-ctn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pagesCell" rowHeight="254" id="0FA-YL-ctn" customClass="PagesTableViewCell" customModule="AlarTestApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="254"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0FA-YL-ctn" id="ozO-0s-cj4">
@@ -181,16 +182,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pP-i2-SHF">
-                                                    <rect key="frame" x="36" y="19" width="350" height="208"/>
+                                                    <rect key="frame" x="16" y="8" width="382" height="238"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.and.pencil.and.ellipsis" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tMp-sA-vfs">
-                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="206.5"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tMp-sA-vfs">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="238"/>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qK-r2-Pyi" customClass="GradientView" customModule="AlarTestApp" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="108" width="350" height="100"/>
+                                                            <rect key="frame" x="0.0" y="138" width="382" height="100"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIR-hO-fN8">
-                                                                    <rect key="frame" x="8" y="71" width="334" height="21"/>
+                                                                    <rect key="frame" x="8" y="71" width="366" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -229,12 +230,16 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="1pP-i2-SHF" firstAttribute="leading" secondItem="ozO-0s-cj4" secondAttribute="leadingMargin" constant="16" id="4tD-Up-WZh"/>
-                                                <constraint firstItem="1pP-i2-SHF" firstAttribute="top" secondItem="ozO-0s-cj4" secondAttribute="topMargin" constant="8" id="MTX-sr-Txx"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="1pP-i2-SHF" secondAttribute="trailing" constant="8" id="NfM-T0-IZH"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="1pP-i2-SHF" secondAttribute="bottom" constant="16" id="jAE-au-0AW"/>
+                                                <constraint firstItem="1pP-i2-SHF" firstAttribute="leading" secondItem="ozO-0s-cj4" secondAttribute="leading" constant="16" id="4tD-Up-WZh"/>
+                                                <constraint firstItem="1pP-i2-SHF" firstAttribute="top" secondItem="ozO-0s-cj4" secondAttribute="top" constant="8" id="MTX-sr-Txx"/>
+                                                <constraint firstAttribute="trailing" secondItem="1pP-i2-SHF" secondAttribute="trailing" constant="16" id="NfM-T0-IZH"/>
+                                                <constraint firstAttribute="bottom" secondItem="1pP-i2-SHF" secondAttribute="bottom" constant="8" id="jAE-au-0AW"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgView" destination="tMp-sA-vfs" id="g22-hs-g38"/>
+                                            <outlet property="nameLabel" destination="dIR-hO-fN8" id="WsX-Wh-CTt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -260,14 +265,34 @@
                             <constraint firstItem="psu-Ul-jiv" firstAttribute="bottom" secondItem="0wb-AN-xIQ" secondAttribute="bottom" id="jJ1-uj-kRp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="0wb-AN-xIQ" id="eRR-2L-7x6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sk6-xP-k5V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="468.11594202898556" y="-237.05357142857142"/>
+            <point key="canvasLocation" x="1378.2608695652175" y="-237.05357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lz0-LS-rWR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PaS-Kv-RuL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rbn-me-XFt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BXp-Bq-Dtt" kind="relationship" relationship="rootViewController" id="x69-ob-BJH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yng-mW-8UM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368.11594202898556" y="-237.05357142857142"/>
         </scene>
     </scenes>
     <resources>
-        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

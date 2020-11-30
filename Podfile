@@ -9,5 +9,6 @@ target 'AlarTestApp' do
 
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'Kingfisher'
 
 end

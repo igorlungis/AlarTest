@@ -17,6 +17,10 @@
 		D984D4D02573B5B600B6FD80 /* LogIn+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4CF2573B5B600B6FD80 /* LogIn+Presenter.swift */; };
 		D984D4D32573BF9800B6FD80 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4D22573BF9800B6FD80 /* UIButton.swift */; };
 		D984D4E02573E3A600B6FD80 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4DF2573E3A600B6FD80 /* GradientView.swift */; };
+		D984D4E52573E83F00B6FD80 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4E42573E83F00B6FD80 /* PagesViewController.swift */; };
+		D984D4E82573E89800B6FD80 /* PagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4E72573E89800B6FD80 /* PagesTableViewCell.swift */; };
+		D984D4F02573EDDA00B6FD80 /* Pages+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4EF2573EDDA00B6FD80 /* Pages+Types.swift */; };
+		D984D4F32573EDE800B6FD80 /* Pages+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D984D4F22573EDE800B6FD80 /* Pages+Presenter.swift */; };
 		D9F7A55F2573846500D42D80 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F7A55E2573846500D42D80 /* LogInViewController.swift */; };
 		D9F7A5632573849600D42D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F7A5622573849600D42D80 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -36,6 +40,10 @@
 		D984D4CF2573B5B600B6FD80 /* LogIn+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogIn+Presenter.swift"; sourceTree = "<group>"; };
 		D984D4D22573BF9800B6FD80 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		D984D4DF2573E3A600B6FD80 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D984D4E42573E83F00B6FD80 /* PagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
+		D984D4E72573E89800B6FD80 /* PagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesTableViewCell.swift; sourceTree = "<group>"; };
+		D984D4EF2573EDDA00B6FD80 /* Pages+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pages+Types.swift"; sourceTree = "<group>"; };
+		D984D4F22573EDE800B6FD80 /* Pages+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pages+Presenter.swift"; sourceTree = "<group>"; };
 		D9F7A55E2573846500D42D80 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		D9F7A5622573849600D42D80 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +184,8 @@
 		D9F7A55A2573840D00D42D80 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				D984D4EF2573EDDA00B6FD80 /* Pages+Types.swift */,
+				D984D4F22573EDE800B6FD80 /* Pages+Presenter.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -183,6 +193,8 @@
 		D9F7A55B2573841600D42D80 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D984D4E42573E83F00B6FD80 /* PagesViewController.swift */,
+				D984D4E72573E89800B6FD80 /* PagesTableViewCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -332,9 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D984D4F02573EDDA00B6FD80 /* Pages+Types.swift in Sources */,
 				D93ECBAC2573A56C00797D41 /* UIView.swift in Sources */,
 				D944BA2D25737B20005335BD /* AppDelegate.swift in Sources */,
+				D984D4F32573EDE800B6FD80 /* Pages+Presenter.swift in Sources */,
 				D944BA2F25737B20005335BD /* SceneDelegate.swift in Sources */,
+				D984D4E52573E83F00B6FD80 /* PagesViewController.swift in Sources */,
+				D984D4E82573E89800B6FD80 /* PagesTableViewCell.swift in Sources */,
 				D984D4CD2573B5A600B6FD80 /* LogIn+Types.swift in Sources */,
 				D9F7A55F2573846500D42D80 /* LogInViewController.swift in Sources */,
 				D984D4D02573B5B600B6FD80 /* LogIn+Presenter.swift in Sources */,
