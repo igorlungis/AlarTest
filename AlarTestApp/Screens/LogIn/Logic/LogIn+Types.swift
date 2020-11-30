@@ -19,7 +19,6 @@ protocol LogInPresenter: AnyObject {
 
 extension LogInScreen {
   enum Event {
-    case viewWillApearEvent
     case nextWasTapped(String, String)
   }
 }

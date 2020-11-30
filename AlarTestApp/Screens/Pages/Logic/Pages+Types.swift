@@ -11,7 +11,6 @@ enum PagesScreen {}
 
 protocol PagesView: AnyObject {
   func render()
-  func startRefresh()
 }
 
 protocol PagesPresenter: AnyObject {

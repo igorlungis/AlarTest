@@ -21,8 +21,6 @@ extension LogInScreen {
     
     func viewEventDidHappen(_ event: Event) {
       switch event {
-      case .viewWillApearEvent:
-        print(#function)
       case .nextWasTapped(let name, let pass):
         print("\(name) - \(pass)")
         checkNameAndPass(name: name, pass: pass)

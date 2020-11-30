@@ -64,7 +64,6 @@ extension LogInViewController: LogInRouter {
     let vc = storyboard?.instantiateViewController(identifier: "pages") as? PagesViewController
     vc?.code = code
     navigationController?.pushViewController(vc!, animated: true)
-    
   }
   
 }

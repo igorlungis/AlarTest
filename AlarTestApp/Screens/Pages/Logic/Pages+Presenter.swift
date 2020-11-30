@@ -27,14 +27,14 @@ extension PagesScreen {
     func viewEventDidHappen(_ event: Event) {
       switch event {
       case .pageWasTapped(let index):
-        print(#function)
+        router?.goToDetailsScreen(info: places[index])
       case .loadInfo:
         loadInfo(code: self.code)
       }
     }
     
     private func loadInfo(code: String) {
-      view?.startRefresh()
+
       let url = "http://www.alarstudios.com/test/data.cgi?code=\(code)&p=\(self.numberOfPage)"
 
       AF.request(url, method: .get).responseJSON { (response) in

@@ -9,7 +9,6 @@ import UIKit
 
 class PagesViewController: UIViewController {
   
-  
   @IBOutlet weak var tableView: UITableView!
   var presenter: PagesPresenter!
   var code: String = ""
@@ -18,27 +17,27 @@ class PagesViewController: UIViewController {
     super.viewDidLoad()
     presenter = PagesScreen.Presenter(view: self, router: self, code: self.code)
     presenter.viewEventDidHappen(.loadInfo)
-    navigationController?.setNavigationBarHidden(true, animated: false)
     refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
     tableView.addSubview(refreshControl)
   }
   
-  var refreshControl = UIRefreshControl()
-      
+  override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      navigationController?.setNavigationBarHidden(true, animated: false)
+  }
+  
+  private lazy var refreshControl = UIRefreshControl()
+  
   @objc func refresh(_ sender: AnyObject) {
     presenter.places.removeAll()
     presenter.numberOfPage = 0
     presenter.viewEventDidHappen(.loadInfo)
   }
-  
-  
+
 }
 
 //MARK: - PagesView protocol
 extension PagesViewController: PagesView {
-  func startRefresh() {
-    refreshControl.beginRefreshing()
-  }
   
   func render() {
     tableView.reloadData()
@@ -51,6 +50,9 @@ extension PagesViewController: PagesView {
 extension PagesViewController: PagesRouter {
   func goToDetailsScreen(info: PageInfo) {
     print(#function)
+    let vc = storyboard?.instantiateViewController(identifier: "details") as? DetailsViewController
+    vc?.placeInfo = info
+    navigationController?.pushViewController(vc!, animated: true)
   }
 }
 
@@ -66,6 +68,7 @@ extension PagesViewController: UITableViewDataSource, UITableViewDelegate {
     if indexPath.row == presenter.places.count - 1 {
       presenter.viewEventDidHappen(.loadInfo)
     }
+    cell.selectionStyle = .none
     return cell
   }
   
@@ -73,5 +76,8 @@ extension PagesViewController: UITableViewDataSource, UITableViewDelegate {
     return self.view.frame.width * 0.8
   }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    presenter.viewEventDidHappen(.pageWasTapped(indexPath.row))
+  }
   
 }

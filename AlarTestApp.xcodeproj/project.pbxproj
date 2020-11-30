@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49655910F395936E35848330 /* Pods_AlarTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FD27573EC9E42CA8F3DC5D /* Pods_AlarTestApp.framework */; };
+		D905A8AB257550F900BCC07C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905A8AA257550F900BCC07C /* DetailsViewController.swift */; };
 		D93ECBAC2573A56C00797D41 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93ECBAB2573A56C00797D41 /* UIView.swift */; };
 		D944BA2D25737B20005335BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944BA2C25737B20005335BD /* AppDelegate.swift */; };
 		D944BA2F25737B20005335BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D944BA2E25737B20005335BD /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 		1F8E4CC57111D30F3DF38CD5 /* Pods-AlarTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarTestApp.debug.xcconfig"; path = "Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		26301D082DDD2DF5DA95D895 /* Pods-AlarTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarTestApp.release.xcconfig"; path = "Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		58FD27573EC9E42CA8F3DC5D /* Pods_AlarTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlarTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D905A8AA257550F900BCC07C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D93ECBAB2573A56C00797D41 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D944BA2925737B20005335BD /* AlarTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D944BA2C25737B20005335BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				D9F7A55D2573842500D42D80 /* UI */,
-				D9F7A55C2573841E00D42D80 /* Logic */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -199,16 +200,10 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		D9F7A55C2573841E00D42D80 /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logic;
-			sourceTree = "<group>";
-		};
 		D9F7A55D2573842500D42D80 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D905A8AA257550F900BCC07C /* DetailsViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -242,6 +237,7 @@
 				D944BA2625737B20005335BD /* Frameworks */,
 				D944BA2725737B20005335BD /* Resources */,
 				803F36142792E813D10836E4 /* [CP] Embed Pods Frameworks */,
+				2BF9A810319902966E68C3B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,6 +294,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2BF9A810319902966E68C3B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlarTestApp/Pods-AlarTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		59657DB8EB158F42BE1F6C8C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +366,7 @@
 				D984D4E82573E89800B6FD80 /* PagesTableViewCell.swift in Sources */,
 				D984D4CD2573B5A600B6FD80 /* LogIn+Types.swift in Sources */,
 				D9F7A55F2573846500D42D80 /* LogInViewController.swift in Sources */,
+				D905A8AB257550F900BCC07C /* DetailsViewController.swift in Sources */,
 				D984D4D02573B5B600B6FD80 /* LogIn+Presenter.swift in Sources */,
 				D984D4E02573E3A600B6FD80 /* GradientView.swift in Sources */,
 				D984D4D32573BF9800B6FD80 /* UIButton.swift in Sources */,

@@ -12,6 +12,12 @@ class PagesTableViewCell: UITableViewCell {
   
   @IBOutlet weak var imgView: UIImageView!
   @IBOutlet weak var nameLabel: UILabel!
+  @IBOutlet weak var cellView: UIView! {
+    didSet {
+      cellView.clipsToBounds = true
+      cellView.layer.cornerRadius = 20
+    }
+  }
   
   var name: String? {
     didSet {
